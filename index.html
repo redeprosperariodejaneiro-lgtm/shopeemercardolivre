@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia Completo Marketplaces - Shopee & Mercado Livre | Prospera Rio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <style>
+    :root{--azul-principal:#092040;--azul-secundario:#00B7D7;--amarelo-acento:#ECC203;--cinza-neutro:#EFF1F3;--azul-escuro:#021738;--branco:#FFFFFF}
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth;background:#092040}
+    body{font-family:'Open Sans',sans-serif;line-height:1.7;color:var(--azul-escuro);background:linear-gradient(135deg,#f8fafc 0%,#e2e8f0 100%);padding-top:70px}
+    section{scroll-margin-top:85px}
+    .nav-bar{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(9,32,64,0.98);padding:15px 0;box-shadow:0 2px 20px rgba(0,0,0,0.1)}
+    .nav-container{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;padding:0 20px}
+    .logo-container{display:flex;align-items:center;gap:12px}
+    .logo{height:40px}
+    .location-text{font-family:'Montserrat',sans-serif;font-weight:700;font-size:11px;letter-spacing:1.5px;color:var(--amarelo-acento)}
+    .nav-menu{display:flex;list-style:none;gap:30px}
+    .nav-menu a{color:var(--branco);text-decoration:none;font-weight:600;font-size:15px;transition:color 0.3s}
+    .nav-menu a:hover{color:var(--amarelo-acento)}
+    .hero-header{background:linear-gradient(135deg,var(--azul-principal),var(--azul-escuro));min-height:70vh;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--branco);padding:60px 20px}
+    .hero-content{max-width:900px}
+    .prospera-badge{background:linear-gradient(135deg,var(--azul-secundario),var(--amarelo-acento));display:inline-block;padding:10px 25px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;color:var(--azul-escuro);margin-bottom:25px}
+    .hero-title{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(32px,6vw,56px);margin-bottom:20px;line-height:1.2}
+    .hero-subtitle{font-size:20px;opacity:0.95;font-weight:300}
+    .main-container{max-width:1200px;margin:0 auto;padding:0 20px}
+    .section{margin:60px 0;padding:50px 35px;background:var(--branco);border-radius:20px;box-shadow:0 10px 40px rgba(0,0,0,0.08);position:relative}
+    .section::before{content:'';position:absolute;top:0;left:0;right:0;height:5px;background:linear-gradient(135deg,var(--azul-secundario),var(--amarelo-acento));border-radius:20px 20px 0 0}
+    .section-header{text-align:center;margin-bottom:40px}
+    .section-title{font-family:'Montserrat',sans-serif;font-weight:700;font-size:32px;color:var(--azul-principal);margin-bottom:10px}
+    .section-subtitle{font-size:18px;color:var(--azul-escuro);opacity:0.7}
+    .tab-buttons{display:flex;justify-content:center;gap:15px;margin-bottom:35px;flex-wrap:wrap}
+    .tab-button{background:var(--cinza-neutro);border:2px solid transparent;color:var(--azul-escuro);padding:12px 30px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:600;font-size:15px;cursor:pointer;transition:all 0.3s}
+    .tab-button:hover{transform:translateY(-2px);background:rgba(0,183,215,0.1)}
+    .tab-button.active{background:linear-gradient(135deg,var(--azul-secundario),var(--azul-principal));color:var(--branco);border-color:var(--azul-secundario)}
+    .tab-content{display:none}
+    .tab-content.active{display:block;animation:fadeIn 0.4s}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    .highlight-card{background:linear-gradient(135deg,var(--amarelo-acento),#f4d03f);color:var(--azul-escuro);padding:25px;border-radius:15px;margin:25px 0;text-align:center}
+    .highlight-card h3{font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;margin-bottom:8px}
+    .feature-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;margin:30px 0}
+    .feature-card{background:var(--branco);border:3px solid var(--azul-secundario);border-radius:15px;padding:25px;transition:all 0.3s}
+    .feature-card:hover{transform:translateY(-5px);box-shadow:0 15px 35px rgba(0,183,215,0.15)}
+    .feature-title{font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:var(--azul-principal);margin-bottom:15px}
+    .feature-card ul{list-style:none;padding:0}
+    .feature-card ul li{margin-bottom:8px;padding-left:22px;position:relative;font-size:15px}
+    .feature-card ul li::before{content:"✓";position:absolute;left:0;color:var(--azul-secundario);font-weight:800;font-size:16px}
+    .card{background:linear-gradient(135deg,rgba(255,255,255,0.9),rgba(239,241,243,0.5));padding:30px;border-radius:15px;margin:25px 0;box-shadow:0 8px 25px rgba(0,0,0,0.06)}
+    .table-card{background:#fff;border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,0.08);overflow:hidden;margin:25px 0;overflow-x:auto}
+    .modern-table{width:100%;border-collapse:collapse;min-width:600px}
+    .modern-table thead th{background:var(--azul-principal);color:#fff;padding:15px 20px;font-family:'Montserrat',sans-serif;font-weight:600;text-align:left;font-size:14px}
+    .modern-table tbody td{padding:15px 20px;border-bottom:1px solid #e6eef5;font-size:14px}
+    .modern-table tbody tr:hover td{background:#f8fbff}
+    .alert{padding:15px 20px;border-radius:10px;margin:20px 0;display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px}
+    .alert-info{background:rgba(0,183,215,0.1);border-left:4px solid var(--azul-secundario);color:var(--azul-principal)}
+    .alert-success{background:rgba(34,197,94,0.1);border-left:4px solid #059669;color:#065f46}
+    .alert-warning{background:rgba(236,194,3,0.1);border-left:4px solid var(--amarelo-acento);color:#92400e}
+    .calculator-section{background:linear-gradient(135deg,var(--azul-principal),var(--azul-escuro));color:var(--branco);padding:40px;border-radius:15px;margin:30px 0}
+    .calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;margin-bottom:25px}
+    .calc-input,.calc-select{background:rgba(255,255,255,0.15);border:2px solid rgba(255,255,255,0.3);border-radius:8px;padding:12px;color:var(--branco);font-size:15px;width:100%}
+    .calc-input::placeholder{color:rgba(255,255,255,0.6)}
+    .calc-input:focus,.calc-select:focus{outline:none;border-color:var(--amarelo-acento);box-shadow:0 0 15px rgba(236,194,3,0.3)}
+    .calc-select option{background:var(--azul-principal);color:var(--branco)}
+    .calc-button{background:linear-gradient(135deg,var(--amarelo-acento),#f4d03f);color:var(--azul-escuro);border:none;padding:15px 35px;border-radius:50px;font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;cursor:pointer;transition:all 0.3s;width:100%;margin-top:10px}
+    .calc-button:hover{transform:translateY(-2px);box-shadow:0 10px 25px rgba(236,194,3,0.3)}
+    .result-display{background:rgba(0,183,215,0.15);border:2px solid var(--azul-secundario);border-radius:12px;padding:25px;margin-top:25px;display:none}
+    .photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin:25px 0}
+    .photo-example{background:linear-gradient(135deg,#f1f5f9,#e2e8f0);border:2px dashed var(--azul-secundario);border-radius:12px;padding:20px;text-align:center;color:var(--azul-secundario);font-weight:600}
+    .faq-container{max-width:850px;margin:0 auto}
+    .faq-item{background:var(--branco);border:2px solid var(--cinza-neutro);border-radius:10px;margin-bottom:15px;overflow:hidden;transition:all 0.3s}
+    .faq-item.active{border-color:var(--azul-secundario)}
+    .faq-question{width:100%;padding:20px;background:transparent;border:none;text-align:left;font-family:'Montserrat',sans-serif;font-weight:600;font-size:16px;color:var(--azul-principal);cursor:pointer;display:flex;justify-content:space-between;align-items:center}
+    .faq-question:hover{background:rgba(0,183,215,0.05)}
+    .faq-icon{font-size:22px;color:var(--azul-secundario);font-weight:700}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height 0.3s;padding:0 20px}
+    .faq-item.active .faq-answer{max-height:800px;padding:0 20px 20px 20px}
+    .glossary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin:30px 0}
+    .glossary-card{background:var(--branco);border:2px solid var(--cinza-neutro);border-radius:10px;padding:20px;transition:all 0.3s}
+    .glossary-card:hover{border-color:var(--azul-secundario);transform:translateY(-3px)}
+    .glossary-term{font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;color:var(--azul-principal);margin-bottom:10px}
+    .glossary-definition{font-size:14px;line-height:1.6}
+    .footer{background:linear-gradient(135deg,var(--azul-principal),var(--azul-escuro));color:var(--branco);padding:50px 20px 25px;margin-top:60px}
+    .footer::before{content:'';display:block;height:5px;background:linear-gradient(135deg,var(--azul-secundario),var(--amarelo-acento));margin-bottom:40px}
+    .footer-container{max-width:1200px;margin:0 auto}
+    .footer-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:35px;margin-bottom:35px}
+    .footer-section h3{font-family:'Montserrat',sans-serif;font-weight:700;font-size:18px;color:var(--amarelo-acento);margin-bottom:18px}
+    .footer-section p,.footer-section a{color:rgba(255,255,255,0.9);font-size:14px;line-height:1.7;text-decoration:none;display:block;margin-bottom:8px}
+    .footer-section a:hover{color:var(--amarelo-acento)}
+    .footer-logo{height:50px;margin-bottom:15px}
+    .footer-highlight{background:rgba(236,194,3,0.15);padding:12px;border-radius:8px;border-left:3px solid var(--amarelo-acento);margin-top:12px}
+    .social-links{display:flex;gap:12px;margin-top:12px}
+    .social-links a{display:inline-block;padding:8px 12px;background:rgba(255,255,255,0.1);border-radius:8px;font-size:13px}
+    .social-links a:hover{background:var(--amarelo-acento);color:var(--azul-escuro)}
+    .footer-bottom{text-align:center;padding-top:25px;border-top:1px solid rgba(255,255,255,0.2);color:rgba(255,255,255,0.7);font-size:13px}
+    @media (max-width:768px){.nav-menu{display:none}.section{padding:30px 20px;margin:40px 0}.section-title{font-size:26px}.calc-grid,.feature-grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+
+  <nav class="nav-bar">
+    <div class="nav-container">
+      <div class="logo-container">
+        <img class="logo" src="https://lh3.googleusercontent.com/d/1x5sNkC9vd7CI78y0xdkWvgoadxPEMcIf=w800" alt="Prospera Rio">
+        <div class="location-text">MARÉ · JACAREZINHO</div>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#topo">Início</a></li>
+        <li><a href="#o-que-e">O Que É</a></li>
+        <li><a href="#comparacao">Comparação</a></li>
+        <li><a href="#cadastro">Cadastro</a></li>
+        <li><a href="#ia-anuncios">IA para Anúncios</a></li>
+        <li><a href="#anuncio">Anúncio Perfeito</a></li>
+        <li><a href="#calculadora">Calculadora</a></li>
+        <li><a href="#fornecedores">Fornecedores</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero-header" id="topo">
+    <div class="hero-content">
+      <div class="prospera-badge">PROSPERA RIO</div>
+      <h1 class="hero-title">Guia Completo Marketplaces</h1>
+      <p class="hero-subtitle">Tudo que você precisa para vender na Shopee, Mercado Livre e WhatsApp Business</p>
+    </div>
+  </header>
+
+  <main class="main-container">
+
+    <section class="section" id="o-que-e">
+      <div class="section-header">
+        <h2 class="section-title">O Que É Marketplace?</h2>
+        <p class="section-subtitle">Entenda antes de começar a vender</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Definição Simples</h3>
+        <p style="font-size:18px;margin-top:10px">Marketplace é um shopping center online onde vários vendedores anunciam seus produtos na mesma plataforma. É como um camelódromo digital, mas organizado e com milhões de clientes visitando todo dia.</p>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:30px 0 20px">Como Funciona</h3>
+      
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3 class="feature-title">1. Você Anuncia</h3>
+          <p>Cadastra seus produtos com fotos, descrição e preço na plataforma (Shopee ou Mercado Livre)</p>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title">2. Cliente Compra</h3>
+          <p>Milhões de pessoas acessam a plataforma todo dia procurando produtos. Quando alguém se interessa, compra direto no site ou app</p>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title">3. Plataforma Intermedia</h3>
+          <p>O marketplace recebe o pagamento do cliente, garante segurança da compra e repassa para você depois da entrega</p>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:40px 0 20px">O Que É WhatsApp Business?</h3>
+      
+      <div class="card">
+        <p style="font-size:16px;margin-bottom:15px">WhatsApp Business é a versão profissional do WhatsApp, feita especialmente para empresas e vendedores. Diferente dos marketplaces, aqui você vende DIRETO para o cliente, sem intermediários.</p>
+        
+        <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:18px;color:var(--azul-principal);margin:20px 0 10px">Diferenças do WhatsApp Normal:</h4>
+        <ul style="list-style:none;padding:0">
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Perfil Comercial:</strong> Mostra nome da empresa, horário, endereço
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Catálogo de Produtos:</strong> Cliente vê seus produtos organizados com foto e preço
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Mensagens Automáticas:</strong> Responde quando você está offline
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Respostas Rápidas:</strong> Salva mensagens prontas para agilizar
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Etiquetas:</strong> Organiza clientes (novo, pedido feito, pago, etc)
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Estatísticas:</strong> Vê quantas mensagens foram lidas e respondidas
+          </li>
+        </ul>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:40px 0 20px">Vantagens e Desvantagens</h3>
+
+      <div class="feature-grid">
+        <div class="feature-card" style="border-top:4px solid #059669">
+          <h3 class="feature-title" style="color:#059669">Pontos Positivos dos Marketplaces</h3>
+          <ul>
+            <li>Milhões de clientes prontos para comprar</li>
+            <li>Não precisa criar site próprio</li>
+            <li>Plataforma cuida do pagamento</li>
+            <li>Sistema de frete integrado</li>
+            <li>Mais confiança do cliente (marca conhecida)</li>
+            <li>Ferramentas de divulgação prontas</li>
+          </ul>
+        </div>
+
+        <div class="feature-card" style="border-top:4px solid #dc2626">
+          <h3 class="feature-title" style="color:#dc2626">Pontos de Atenção dos Marketplaces</h3>
+          <ul>
+            <li>Paga comissão por cada venda (20%)</li>
+            <li>Muita concorrência de preço</li>
+            <li>Precisa seguir regras da plataforma</li>
+            <li>Atendimento rápido é obrigatório</li>
+            <li>Avaliações ruins prejudicam muito</li>
+            <li>Plataforma pode mudar regras</li>
+          </ul>
+        </div>
+
+        <div class="feature-card" style="border-top:4px solid #059669">
+          <h3 class="feature-title" style="color:#059669">Pontos Positivos do WhatsApp Business</h3>
+          <ul>
+            <li>0% de comissão - todo lucro é seu</li>
+            <li>Contato direto com o cliente</li>
+            <li>Relacionamento personalizado</li>
+            <li>Cliente já conhece a ferramenta</li>
+            <li>Fácil de usar e configurar</li>
+            <li>Você controla tudo</li>
+          </ul>
+        </div>
+
+        <div class="feature-card" style="border-top:4px solid #dc2626">
+          <h3 class="feature-title" style="color:#dc2626">Pontos de Atenção do WhatsApp Business</h3>
+          <ul>
+            <li>Precisa divulgar seu número</li>
+            <li>Não tem tráfego automático</li>
+            <li>Você cuida do pagamento (PIX, etc)</li>
+            <li>Precisa organizar frete sozinho</li>
+            <li>Atendimento manual (mais trabalhoso)</li>
+            <li>Alcance menor no início</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="alert alert-info">
+        <span><strong>DICA IMPORTANTE:</strong> Marketplace não substitui venda direta (WhatsApp). Use os dois! Marketplace traz clientes novos, WhatsApp mantém relacionamento e margem maior.</span>
+      </div>
+    </section>
+
+    <section class="section" id="comparacao">
+      <div class="section-header">
+        <h2 class="section-title">Shopee vs Mercado Livre vs WhatsApp</h2>
+        <p class="section-subtitle">Qual escolher? Compare e decida</p>
+      </div>
+
+      <div class="table-card">
+        <table class="modern-table">
+          <thead>
+            <tr>
+              <th>Critério</th>
+              <th>Shopee</th>
+              <th>Mercado Livre</th>
+              <th>WhatsApp Business</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Comissão</strong></td>
+              <td>14-20% + R$ 4,00</td>
+              <td>11,5-18% do valor</td>
+              <td>0% (grátis)</td>
+            </tr>
+            <tr>
+              <td><strong>Público</strong></td>
+              <td>70 milhões usuários/mês</td>
+              <td>85 milhões usuários/mês</td>
+              <td>Seus contatos + indicações</td>
+            </tr>
+            <tr>
+              <td><strong>Velocidade Cadastro</strong></td>
+              <td>15-20 min (aprovação na hora)</td>
+              <td>20-30 min + 1-3 dias aprovação</td>
+              <td>5-10 minutos (imediato)</td>
+            </tr>
+            <tr>
+              <td><strong>Melhor Para</strong></td>
+              <td>Produtos baratos, moda, casa</td>
+              <td>Eletrônicos, produtos caros</td>
+              <td>Clientes que já conhecem você</td>
+            </tr>
+            <tr>
+              <td><strong>Frete</strong></td>
+              <td>Integrado, pode ser grátis</td>
+              <td>Integrado com Mercado Envios</td>
+              <td>Você combina com cliente</td>
+            </tr>
+            <tr>
+              <td><strong>Pagamento</strong></td>
+              <td>Plataforma recebe e repassa</td>
+              <td>Mercado Pago recebe e repassa</td>
+              <td>Direto (PIX, dinheiro, cartão)</td>
+            </tr>
+            <tr>
+              <td><strong>Ticket Médio Ideal</strong></td>
+              <td>R$ 20 - R$ 150</td>
+              <td>R$ 100 - R$ 1.000+</td>
+              <td>Qualquer valor</td>
+            </tr>
+            <tr>
+              <td><strong>Visibilidade</strong></td>
+              <td>Alta (busca interna)</td>
+              <td>Muito alta (Google também)</td>
+              <td>Você precisa divulgar</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:40px 0 20px">Qual Escolher?</h3>
+
+      <div class="feature-grid">
+        <div class="feature-card" style="border-left:5px solid var(--azul-secundario)">
+          <h3 class="feature-title">Escolha SHOPEE se:</h3>
+          <ul>
+            <li>Quer começar mais rápido</li>
+            <li>Vende produtos até R$ 150</li>
+            <li>Trabalha com moda, beleza, casa</li>
+            <li>Quer testar com baixo risco</li>
+            <li>Prefere frete grátis para cliente</li>
+            <li>É iniciante em vendas online</li>
+          </ul>
+        </div>
+
+        <div class="feature-card" style="border-left:5px solid var(--azul-secundario)">
+          <h3 class="feature-title">Escolha MERCADO LIVRE se:</h3>
+          <ul>
+            <li>Vende produtos acima de R$ 150</li>
+            <li>Trabalha com eletrônicos, livros</li>
+            <li>Quer mais credibilidade</li>
+            <li>Precisa de Mercado Pago</li>
+            <li>Quer aparecer no Google</li>
+            <li>Tem produtos de maior valor</li>
+          </ul>
+        </div>
+
+        <div class="feature-card" style="border-left:5px solid var(--amarelo-acento)">
+          <h3 class="feature-title">Use WHATSAPP para:</h3>
+          <ul>
+            <li>Vender sem comissão</li>
+            <li>Relacionamento direto</li>
+            <li>Atendimento personalizado</li>
+            <li>Produtos sob encomenda</li>
+            <li>Fidelizar clientes</li>
+            <li>Complementar marketplaces</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Recomendação Prospera Rio</h3>
+        <p style="font-size:18px;margin-top:15px">Para <strong>iniciantes:</strong> Comece com SHOPEE (mais rápido) + WhatsApp Business (sem comissão)</p>
+        <p style="font-size:16px;margin-top:10px">Depois que ganhar experiência e tiver produtos de maior valor, adicione Mercado Livre para alcançar mais clientes</p>
+      </div>
+
+      <div class="alert alert-success">
+        <span><strong>ESTRATÉGIA IDEAL:</strong> Use os 3 canais juntos! Shopee e Mercado Livre trazem clientes novos, WhatsApp mantém relacionamento e aumenta margem de lucro.</span>
+      </div>
+    </section>
+
+    <section class="section" id="cadastro">
+      <div class="section-header">
+        <h2 class="section-title">Como Se Cadastrar</h2>
+        <p class="section-subtitle">Processo completo para criar sua conta vendedora</p>
+      </div>
+
+      <div class="tab-buttons">
+        <button class="tab-button active" onclick="switchTab('shopee-cad',this)">Shopee</button>
+        <button class="tab-button" onclick="switchTab('ml-cad',this)">Mercado Livre</button>
+        <button class="tab-button" onclick="switchTab('whatsapp-cad',this)">WhatsApp Business</button>
+      </div>
+
+      <div id="shopee-cad" class="tab-content active">
+        <div class="highlight-card">
+          <h3>Cadastro Shopee - Passo a Passo (15-20 minutos)</h3>
+          <p style="font-size:16px;margin-top:10px">Conta aprovada NA HORA! Siga este roteiro durante a oficina</p>
+        </div>
+
+        <div class="alert alert-info">
+          <span><strong>LINK DIRETO:</strong> <a href="https://seller.shopee.com.br" target="_blank" rel="noopener" style="color:var(--azul-principal);text-decoration:underline;font-weight:700">seller.shopee.com.br</a> (clique para abrir em nova aba)</span>
+        </div>
+
+        <div style="margin:30px 0">
+          <div class="step-card" style="background:var(--branco);border-left:5px solid var(--azul-secundario);padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,var(--azul-secundario),var(--azul-principal));color:var(--branco);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">1</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Acessar Portal do Vendedor (2 min)</h4>
+            </div>
+            <p style="margin-bottom:10px">No celular ou computador, acesse: <strong>seller.shopee.com.br</strong></p>
+            <p style="margin-bottom:10px">Clique em <strong>"Cadastre-se Grátis"</strong> ou <strong>"Quero Vender"</strong></p>
+            <a href="https://seller.shopee.com.br" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,var(--amarelo-acento),#f4d03f);color:var(--azul-escuro);padding:12px 30px;border-radius:50px;text-decoration:none;font-weight:700;margin-top:10px">Abrir Portal Shopee</a>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid var(--azul-secundario);padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,var(--azul-secundario),var(--azul-principal));color:var(--branco);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">2</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Escolher Tipo de Conta (1 min)</h4>
+            </div>
+            <p style="margin-bottom:10px">Você verá duas opções:</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px">
+              <div style="background:rgba(0,183,215,0.05);padding:15px;border-radius:10px;border:2px solid var(--azul-secundario)">
+                <p style="font-weight:700;margin-bottom:8px">Pessoa Física (CPF)</p>
+                <p style="font-size:14px">Para quem não tem CNPJ ou MEI</p>
+              </div>
+              <div style="background:rgba(0,183,215,0.05);padding:15px;border-radius:10px;border:2px solid var(--azul-secundario)">
+                <p style="font-weight:700;margin-bottom:8px">Pessoa Jurídica (CNPJ)</p>
+                <p style="font-size:14px">Se você tem MEI ou empresa</p>
+              </div>
+            </div>
+            <div class="alert alert-warning" style="margin-top:15px;font-size:14px">
+              <span><strong>Dica:</strong> Se você é MEI, escolha "Pessoa Jurídica" - passa mais confiança para o cliente!</span>
+            </div>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid var(--azul-secundario);padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,var(--azul-secundario),var(--azul-principal));color:var(--branco);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">3</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Preencher Dados Pessoais (3 min)</h4>
+            </div>
+            <p style="margin-bottom:15px">Preencha com atenção:</p>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>CPF ou CNPJ:</strong> Digite apenas números
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Nome completo ou Razão Social:</strong> Igual ao documento
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>E-mail:</strong> Use um profissional (ex: vendas.seunome@gmail.com)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Telefone com WhatsApp:</strong> Coloque DDD + número
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Senha:</strong> Mínimo 8 caracteres, com letras e números
+              </li>
+            </ul>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid var(--azul-secundario);padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,var(--azul-secundario),var(--azul-principal));color:var(--branco);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">4</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Verificação por SMS (1 min)</h4>
+            </div>
+            <p style="margin-bottom:10px">A Shopee enviará um código de 6 dígitos para seu celular</p>
+            <p style="margin-bottom:10px">Digite o código recebido no campo indicado</p>
+            <div class="alert alert-info" style="margin-top:15px;font-size:14px">
+              <span>Não recebeu? Aguarde 2 minutos e clique em "Reenviar código"</span>
+            </div>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid var(--azul-secundario);padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,var(--azul-secundario),var(--azul-principal));color:var(--branco);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">5</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Enviar Fotos dos Documentos (5 min)</h4>
+            </div>
+            <p style="margin-bottom:15px">Tire fotos NÍTIDAS e com BOA LUZ dos seguintes documentos:</p>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Frente do RG ou CNH</strong> (foto clara, sem cortes)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Verso do RG ou CNH</strong>
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Comprovante de endereço</strong> (até 90 dias)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Se PJ:</strong> Contrato Social ou CCMEI (PDF ou foto)
+              </li>
+            </ul>
+            <div class="alert alert-warning" style="margin-top:15px;font-size:14px">
+              <span><strong>ATENÇÃO:</strong> Foto tremida, escura ou cortada será REJEITADA! Use boa iluminação e segure firme o celular.</span>
+            </div>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid var(--azul-secundario);padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,var(--azul-secundario),var(--azul-principal));color:var(--branco);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">6</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Configurar sua Loja (5 min)</h4>
+            </div>
+            <p style="margin-bottom:15px">Personalize sua loja:</p>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Nome da Loja:</strong> Curto e fácil de lembrar (ex: Moda da Ana, Eletrônicos Silva)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Logo:</strong> 300x300 pixels, fundo branco ou transparente (opcional no início)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Descrição:</strong> 2-3 frases sobre você e o que vende
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Categorias:</strong> Escolha os tipos de produtos que vai vender
+              </li>
+            </ul>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid var(--azul-secundario);padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,var(--azul-secundario),var(--azul-principal));color:var(--branco);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">7</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Cadastrar Conta Bancária (3 min)</h4>
+            </div>
+            <p style="margin-bottom:15px">Informe onde vai receber o dinheiro das vendas:</p>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Banco:</strong> Selecione na lista
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Agência:</strong> Com dígito (ex: 1234-5)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>Conta:</strong> Corrente ou Poupança com dígito
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+                <strong>CPF/CNPJ do titular:</strong> Deve ser o mesmo da loja
+              </li>
+            </ul>
+            <div class="alert alert-warning" style="margin-top:15px;font-size:14px">
+              <span><strong>IMPORTANTE:</strong> A conta bancária DEVE estar no mesmo CPF/CNPJ cadastrado na loja!</span>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <h3>Pronto! Conta Criada e Aprovada</h3>
+            <p style="font-size:18px;margin-top:10px">Agora você já pode criar seu primeiro anúncio! Vá para a seção "Anúncio Perfeito" e siga o passo a passo.</p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3 class="feature-title">Documentos - Pessoa Física</h3>
+            <ul>
+              <li>CPF válido</li>
+              <li>RG ou CNH</li>
+              <li>Comprovante de endereço (90 dias)</li>
+              <li>Conta bancária ativa</li>
+              <li>Celular com WhatsApp</li>
+              <li>E-mail válido</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h3 class="feature-title">Documentos - Pessoa Jurídica</h3>
+            <ul>
+              <li>CNPJ ativo</li>
+              <li>Contrato social ou CCMEI</li>
+              <li>CPF e RG do responsável</li>
+              <li>Comprovante endereço comercial</li>
+              <li>Conta bancária PJ</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="ml-cad" class="tab-content">
+        <div class="highlight-card">
+          <h3>Cadastro Mercado Livre - Passo a Passo (20-30 minutos)</h3>
+          <p style="font-size:16px;margin-top:10px">Aprovação em 1-3 dias úteis</p>
+        </div>
+
+        <div class="alert alert-info">
+          <span><strong>LINK DIRETO:</strong> <a href="https://www.mercadolivre.com.br/vendas/lista" target="_blank" rel="noopener" style="color:var(--azul-principal);text-decoration:underline;font-weight:700">mercadolivre.com.br/vendas/lista</a> (clique para abrir em nova aba)</span>
+        </div>
+
+        <div style="margin:30px 0">
+          <div class="step-card" style="background:var(--branco);border-left:5px solid #FFE600;padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,#FFE600,#FFD700);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">1</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Acessar Portal (2 min)</h4>
+            </div>
+            <p style="margin-bottom:10px">Acesse: <strong>mercadolivre.com.br</strong></p>
+            <p style="margin-bottom:10px">No canto superior direito, clique em <strong>"Vender"</strong> → <strong>"Quero vender"</strong></p>
+            <a href="https://www.mercadolivre.com.br/vendas/lista" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#FFE600,#FFD700);color:var(--azul-escuro);padding:12px 30px;border-radius:50px;text-decoration:none;font-weight:700;margin-top:10px">Abrir Portal Mercado Livre</a>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid #FFE600;padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,#FFE600,#FFD700);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">2</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Criar ou Acessar Conta (3 min)</h4>
+            </div>
+            <p style="margin-bottom:10px">Se já tem conta como comprador: Use o mesmo e-mail e senha</p>
+            <p style="margin-bottom:10px">Se não tem conta: Clique em <strong>"Criar conta"</strong></p>
+            <ul style="list-style:none;padding:0;margin-top:15px">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                Digite seu e-mail
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                Crie uma senha forte (8+ caracteres)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                Confirme seu e-mail (código enviado)
+              </li>
+            </ul>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid #FFE600;padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,#FFE600,#FFD700);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">3</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Ativar Modo Vendedor (2 min)</h4>
+            </div>
+            <p style="margin-bottom:10px">Depois de logar, vá em: <strong>"Minha conta"</strong> → <strong>"Vender"</strong></p>
+            <p style="margin-bottom:15px">Escolha o tipo de conta:</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px">
+              <div style="background:rgba(255,230,0,0.1);padding:15px;border-radius:10px;border:2px solid #FFE600">
+                <p style="font-weight:700;margin-bottom:8px">Pessoa Física (CPF)</p>
+                <p style="font-size:14px">Para vendedores sem CNPJ</p>
+              </div>
+              <div style="background:rgba(255,230,0,0.1);padding:15px;border-radius:10px;border:2px solid #FFE600">
+                <p style="font-weight:700;margin-bottom:8px">Pessoa Jurídica (CNPJ)</p>
+                <p style="font-size:14px">Para MEI e empresas</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid #FFE600;padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,#FFE600,#FFD700);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">4</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Dados Pessoais (5 min)</h4>
+            </div>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Nome completo ou Razão Social</strong>
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>CPF ou CNPJ</strong> (apenas números)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Data de nascimento</strong> (se PF)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Telefone com DDD</strong>
+              </li>
+            </ul>
+            <h4 style="margin:20px 0 10px;font-weight:600">Endereço Completo:</h4>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                CEP, Rua, Número, Complemento
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                Bairro, Cidade, Estado
+              </li>
+            </ul>
+            <div class="alert alert-warning" style="margin-top:15px;font-size:14px">
+              <span><strong>ATENÇÃO:</strong> Use o endereço onde você guarda os produtos (impacta cálculo de frete)!</span>
+            </div>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid #FFE600;padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,#FFE600,#FFD700);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">5</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Verificação de Identidade (2 min)</h4>
+            </div>
+            <p style="margin-bottom:15px">O Mercado Livre enviará códigos de verificação:</p>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Código por SMS:</strong> Digite no campo indicado
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Código por E-mail:</strong> Confira caixa de entrada
+              </li>
+            </ul>
+            <div class="alert alert-info" style="margin-top:15px;font-size:14px">
+              <span>Não recebeu? Verifique spam ou clique em "Reenviar código"</span>
+            </div>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid #FFE600;padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,#FFE600,#FFD700);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">6</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Upload de Documentos (5 min)</h4>
+            </div>
+            <p style="margin-bottom:15px">Envie fotos NÍTIDAS dos documentos:</p>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>RG ou CNH:</strong> Frente e verso
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Comprovante de endereço</strong> (até 90 dias)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Se PJ:</strong> Contrato Social ou CCMEI
+              </li>
+            </ul>
+            <div class="alert alert-warning" style="margin-top:15px;font-size:14px">
+              <span><strong>PRAZO DE ANÁLISE:</strong> 1 a 3 dias úteis. Você receberá e-mail quando for aprovado.</span>
+            </div>
+          </div>
+
+          <div class="step-card" style="background:var(--branco);border-left:5px solid #FFE600;padding:25px;margin:20px 0;border-radius:12px;box-shadow:0 8px 20px rgba(0,0,0,0.05)">
+            <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+              <div style="background:linear-gradient(135deg,#FFE600,#FFD700);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;flex-shrink:0">7</div>
+              <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;color:var(--azul-principal);margin:0">Dados Bancários (3 min)</h4>
+            </div>
+            <p style="margin-bottom:15px">Cadastre onde vai receber o dinheiro:</p>
+            <ul style="list-style:none;padding:0">
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Banco:</strong> Selecione na lista
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Tipo de conta:</strong> Corrente ou Poupança
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Agência</strong> (sem dígito)
+              </li>
+              <li style="margin-bottom:10px;padding-left:25px;position:relative">
+                <span style="position:absolute;left:0;color:#FFE600;font-weight:800">✓</span>
+                <strong>Número da conta</strong> (com dígito)
+              </li>
+            </ul>
+            <p style="margin-top:15px">Aguarde validação (1-2 dias)</p>
+          </div>
+
+          <div class="highlight-card" style="background:linear-gradient(135deg,#FFE600,#FFD700)">
+            <h3>Cadastro Enviado!</h3>
+            <p style="font-size:18px;margin-top:10px">Aguarde e-mail de aprovação em 1-3 dias úteis. Depois você poderá publicar seus anúncios!</p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3 class="feature-title">Documentos - Pessoa Física</h3>
+            <ul>
+              <li>CPF válido e regularizado</li>
+              <li>RG ou CNH com foto nítida</li>
+              <li>Comprovante endereço (90 dias)</li>
+              <li>E-mail pessoal válido</li>
+              <li>Celular para verificação SMS</li>
+              <li>Conta bancária em seu nome</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h3 class="feature-title">Documentos - Pessoa Jurídica</h3>
+            <ul>
+              <li>CNPJ ativo na Receita</li>
+              <li>Contrato social atualizado</li>
+              <li>CPF e RG do representante</li>
+              <li>Comprovante endereço comercial</li>
+              <li>Inscrição estadual (se aplicável)</li>
+              <li>Conta bancária empresarial</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="whatsapp-cad" class="tab-content">
+        <div class="highlight-card">
+          <h3>WhatsApp Business - Configure em 10 minutos</h3>
+          <p style="font-size:16px;margin-top:10px">Venda direto sem pagar comissão!</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3 class="feature-title">Passo 1: Baixar App</h3>
+            <ul>
+              <li>Play Store ou App Store</li>
+              <li>Procure "WhatsApp Business"</li>
+              <li>Instale (ícone verde com B)</li>
+              <li>Use número comercial diferente do pessoal</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h3 class="feature-title">Passo 2: Configurar Perfil</h3>
+            <ul>
+              <li>Nome da empresa</li>
+              <li>Categoria do negócio</li>
+              <li>Descrição (o que você vende)</li>
+              <li>Horário de funcionamento</li>
+              <li>Endereço (se aplicável)</li>
+            </ul>
+          </div>
+          <div class="feature-card">
+            <h3 class="feature-title">Passo 3: Criar Catálogo</h3>
+            <ul>
+              <li>Menu → Ferramentas comerciais</li>
+              <li>Catálogo → Adicionar item</li>
+              <li>Foto do produto</li>
+              <li>Nome, preço, descrição</li>
+              <li>Salvar e compartilhar</li>
+            </ul>
+          </div>
+        </div>
+        <div class="alert alert-success">
+          <span>VANTAGEM: 0% de comissão! Todo lucro é seu. Use junto com marketplaces para maximizar vendas.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ia-anuncios">
+      <div class="section-header">
+        <h2 class="section-title">Use Inteligência Artificial para Criar Anúncios Profissionais</h2>
+        <p class="section-subtitle">A MÁGICA da oficina: Transforme fotos comuns em anúncios de alto impacto</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Por Que Usar IA nos Seus Anúncios?</h3>
+        <p style="font-size:18px;margin-top:15px">Você não precisa contratar fotógrafo ou designer! Com IA gratuita, você cria:</p>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin-top:20px;text-align:left">
+          <div style="background:rgba(255,255,255,0.3);padding:15px;border-radius:10px">
+            <strong>✓ Fotos profissionais</strong> a partir de foto de celular
+          </div>
+          <div style="background:rgba(255,255,255,0.3);padding:15px;border-radius:10px">
+            <strong>✓ Títulos otimizados</strong> que aparecem nas buscas
+          </div>
+          <div style="background:rgba(255,255,255,0.3);padding:15px;border-radius:10px">
+            <strong>✓ Descrições persuasivas</strong> que vendem
+          </div>
+          <div style="background:rgba(255,255,255,0.3);padding:15px;border-radius:10px">
+            <strong>✓ Imagens de produtos em uso</strong> sem modelo profissional
+          </div>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:40px 0 20px">Ferramentas de IA Gratuitas</h3>
+
+      <div class="feature-grid">
+        <div class="feature-card" style="border-top:4px solid #10a37f">
+          <h3 class="feature-title">ChatGPT</h3>
+          <p style="margin-bottom:15px"><strong>Melhor para:</strong> Criar textos, títulos e descrições</p>
+          <p style="margin-bottom:15px"><strong>Versão gratuita:</strong> GPT-4o mini (suficiente para textos)</p>
+          <p style="margin-bottom:15px"><strong>Gera imagens:</strong> Sim (DALL-E 3 incluso)</p>
+          <a href="https://chat.openai.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#10a37f,#1a7f64);color:white;padding:12px 25px;border-radius:50px;text-decoration:none;font-weight:700;margin-top:10px">Acessar ChatGPT</a>
+        </div>
+
+        <div class="feature-card" style="border-top:4px solid #4285f4">
+          <h3 class="feature-title">Google Gemini</h3>
+          <p style="margin-bottom:15px"><strong>Melhor para:</strong> Imagens realistas e melhorias de foto</p>
+          <p style="margin-bottom:15px"><strong>Versão gratuita:</strong> Gemini 2.0 Flash (excelente)</p>
+          <p style="margin-bottom:15px"><strong>Gera imagens:</strong> Sim (Imagen 3 - muito bom)</p>
+          <a href="https://gemini.google.com" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#4285f4,#34a853);color:white;padding:12px 25px;border-radius:50px;text-decoration:none;font-weight:700;margin-top:10px">Acessar Gemini</a>
+        </div>
+
+        <div class="feature-card" style="border-top:4px solid #000000">
+          <h3 class="feature-title">Grok (X.AI)</h3>
+          <p style="margin-bottom:15px"><strong>Melhor para:</strong> Imagens criativas e artísticas</p>
+          <p style="margin-bottom:15px"><strong>Versão gratuita:</strong> Limitada (25 por dia)</p>
+          <p style="margin-bottom:15px"><strong>Gera imagens:</strong> Sim (Flux - estilo único)</p>
+          <a href="https://x.com/i/grok" target="_blank" rel="noopener" style="display:inline-block;background:linear-gradient(135deg,#000000,#333333);color:white;padding:12px 25px;border-radius:50px;text-decoration:none;font-weight:700;margin-top:10px">Acessar Grok</a>
+        </div>
+      </div>
+
+      <div class="alert alert-success">
+        <span><strong>RECOMENDAÇÃO PROSPERA RIO:</strong> Use ChatGPT para textos e Gemini para imagens. Ambos são gratuitos e funcionam muito bem!</span>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:28px;color:var(--azul-principal);margin:50px 0 25px;text-align:center">Prompts Prontos para Copiar e Usar</h3>
+
+      <div class="tab-buttons">
+        <button class="tab-button active" onclick="switchTab('prompt-titulo',this)">Títulos</button>
+        <button class="tab-button" onclick="switchTab('prompt-descricao',this)">Descrições</button>
+        <button class="tab-button" onclick="switchTab('prompt-foto-luxo',this)">Foto Luxo</button>
+        <button class="tab-button" onclick="switchTab('prompt-foto-veludo',this)">Foto Veludo</button>
+        <button class="tab-button" onclick="switchTab('prompt-roupa-modelo',this)">Roupa em Modelo</button>
+        <button class="tab-button" onclick="switchTab('prompt-produto-uso',this)">Produto em Uso</button>
+      </div>
+
+      <div id="prompt-titulo" class="tab-content active">
+        <div class="card">
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:var(--azul-principal);margin-bottom:15px">Prompt: Criar 10 Títulos Otimizados</h4>
+          <p style="margin-bottom:15px"><strong>Use em:</strong> ChatGPT, Gemini ou Grok</p>
+          <div style="background:#f8fafc;padding:20px;border-radius:10px;border-left:4px solid var(--azul-secundario);margin:15px 0">
+            <p style="font-family:monospace;font-size:14px;line-height:1.8;white-space:pre-wrap">Crie 10 variações de título para o produto <strong>[NOME DO PRODUTO]</strong> focando nas palavras-chave mais buscadas no Mercado Livre e Shopee.
+
+Cada título deve ter entre 50-60 caracteres e incluir:
+- Marca (se tiver)
+- Tipo do produto
+- Característica principal
+- Cor ou tamanho
+- Benefício chave
+
+Exemplo de estrutura:
+"Garrafa Térmica Inox 1L Preta Academia 24h Gelado"
+
+Produto: <strong>[DESCREVA SEU PRODUTO AQUI]</strong></p>
+          </div>
+          <button onclick="copyPrompt('prompt1')" style="background:var(--azul-secundario);color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600;margin-top:10px">Copiar Prompt</button>
+          <textarea id="prompt1" style="position:absolute;left:-9999px">Crie 10 variações de título para o produto [NOME DO PRODUTO] focando nas palavras-chave mais buscadas no Mercado Livre e Shopee.
+
+Cada título deve ter entre 50-60 caracteres e incluir:
+- Marca (se tiver)
+- Tipo do produto
+- Característica principal
+- Cor ou tamanho
+- Benefício chave
+
+Exemplo de estrutura:
+"Garrafa Térmica Inox 1L Preta Academia 24h Gelado"
+
+Produto: [DESCREVA SEU PRODUTO AQUI]</textarea>
+        </div>
+      </div>
+
+      <div id="prompt-descricao" class="tab-content">
+        <div class="card">
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:var(--azul-principal);margin-bottom:15px">Prompt: Descrição Persuasiva Completa</h4>
+          <p style="margin-bottom:15px"><strong>Use em:</strong> ChatGPT, Gemini ou Grok</p>
+          <div style="background:#f8fafc;padding:20px;border-radius:10px;border-left:4px solid var(--azul-secundario);margin:15px 0">
+            <p style="font-family:monospace;font-size:14px;line-height:1.8;white-space:pre-wrap">Você é um copywriter especialista em e-commerce e marketplaces, com foco em maximizar cliques e conversões.
+
+Crie uma descrição de anúncio para o Mercado Livre/Shopee do meu produto: <strong>[NOME DO PRODUTO]</strong>
+
+<strong>INFORMAÇÕES DO PRODUTO:</strong>
+- Nome completo: [PREENCHA]
+- Categoria: [ex: garrafa térmica, tênis esportivo, bolsa feminina]
+- Principais benefícios: [ex: mantém temperatura por 24h, confortável para corrida]
+- Diferenciais técnicos: [ex: aço inox, tecnologia anti-vazamento]
+- Capacidade/tamanho: [PREENCHA]
+- Cor/modelo: [PREENCHA]
+
+<strong>PÚBLICO-ALVO:</strong>
+[ex: mulheres premium, jovens fitness, pessoas que frequentam academia, mães, profissionais]
+
+<strong>CENÁRIOS DE USO:</strong>
+[ex: academia, praia, escritório, dia a dia, viagens]
+
+<strong>INSTRUÇÕES:</strong>
+1. Destaque os principais benefícios logo no início
+2. Utilize palavras-chave de alto volume de busca
+3. Tenha tom aspiracional, fale diretamente com o público
+4. Use gatilhos de vendas de forma natural:
+   - Escassez: "Estoque limitado"
+   - Urgência: "Oferta até hoje"
+   - Prova social: "Mais de 500 clientes satisfeitos"
+   - Garantia: "Satisfação garantida"
+5. Estruture: Benefícios → Características técnicas → Conteúdo → Garantia
+
+O texto deve fazer o cliente sentir que precisa comprar AGORA.</p>
+          </div>
+          <button onclick="copyPrompt('prompt2')" style="background:var(--azul-secundario);color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600;margin-top:10px">Copiar Prompt</button>
+          <textarea id="prompt2" style="position:absolute;left:-9999px">Você é um copywriter especialista em e-commerce e marketplaces, com foco em maximizar cliques e conversões.
+
+Crie uma descrição de anúncio para o Mercado Livre/Shopee do meu produto: [NOME DO PRODUTO]
+
+INFORMAÇÕES DO PRODUTO:
+- Nome completo: [PREENCHA]
+- Categoria: [ex: garrafa térmica, tênis esportivo, bolsa feminina]
+- Principais benefícios: [ex: mantém temperatura por 24h, confortável para corrida]
+- Diferenciais técnicos: [ex: aço inox, tecnologia anti-vazamento]
+- Capacidade/tamanho: [PREENCHA]
+- Cor/modelo: [PREENCHA]
+
+PÚBLICO-ALVO:
+[ex: mulheres premium, jovens fitness, pessoas que frequentam academia, mães, profissionais]
+
+CENÁRIOS DE USO:
+[ex: academia, praia, escritório, dia a dia, viagens]
+
+INSTRUÇÕES:
+1. Destaque os principais benefícios logo no início
+2. Utilize palavras-chave de alto volume de busca
+3. Tenha tom aspiracional, fale diretamente com o público
+4. Use gatilhos de vendas de forma natural:
+   - Escassez: "Estoque limitado"
+   - Urgência: "Oferta até hoje"
+   - Prova social: "Mais de 500 clientes satisfeitos"
+   - Garantia: "Satisfação garantida"
+5. Estruture: Benefícios → Características técnicas → Conteúdo → Garantia
+
+O texto deve fazer o cliente sentir que precisa comprar AGORA.</textarea>
+        </div>
+      </div>
+
+      <div id="prompt-foto-luxo" class="tab-content">
+        <div class="card">
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:var(--azul-principal);margin-bottom:15px">Prompt: Transformar Foto Simples em Foto Profissional</h4>
+          <p style="margin-bottom:15px"><strong>Use em:</strong> ChatGPT (com imagem) ou Gemini (melhor resultado)</p>
+          <div class="alert alert-warning" style="margin:15px 0">
+            <span><strong>COMO USAR:</strong> Tire foto do produto com celular → Faça upload → Cole este prompt → Personalize ambiente → Gere!</span>
+          </div>
+          <div style="background:#f8fafc;padding:20px;border-radius:10px;border-left:4px solid var(--azul-secundario);margin:15px 0">
+            <p style="font-family:monospace;font-size:14px;line-height:1.8;white-space:pre-wrap">Transforme essa foto em uma imagem de estética luxuosa, com acabamento profissional de estúdio.
+
+A iluminação deve ser limpa, suave e bem controlada, como em uma foto feita por uma câmera Sony A7 IV com lente 85mm f/1.4, destacando textura e nitidez em todos os detalhes.
+
+O ângulo da captura deve ser frontal, mantendo máxima clareza das linhas e do design do produto.
+
+O background deve transmitir o clima de uma <strong>[PREENCHA: ex: loja moderna, ambiente clean, espaço minimalista]</strong>, porém levemente desfocado para manter o objeto como ponto focal da composição.
+
+<strong>APLICAÇÕES:</strong>
+- Fotos para marketplace (Mercado Livre, Shopee)
+- Posts de lançamento no Instagram
+- Catálogo digital
+- Anúncios pagos</p>
+          </div>
+          <button onclick="copyPrompt('prompt3')" style="background:var(--azul-secundario);color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600;margin-top:10px">Copiar Prompt</button>
+          <textarea id="prompt3" style="position:absolute;left:-9999px">Transforme essa foto em uma imagem de estética luxuosa, com acabamento profissional de estúdio.
+
+A iluminação deve ser limpa, suave e bem controlada, como em uma foto feita por uma câmera Sony A7 IV com lente 85mm f/1.4, destacando textura e nitidez em todos os detalhes.
+
+O ângulo da captura deve ser frontal, mantendo máxima clareza das linhas e do design do produto.
+
+O background deve transmitir o clima de uma [PREENCHA: ex: loja moderna, ambiente clean, espaço minimalista], porém levemente desfocado para manter o objeto como ponto focal da composição.
+
+APLICAÇÕES:
+- Fotos para marketplace (Mercado Livre, Shopee)
+- Posts de lançamento no Instagram
+- Catálogo digital
+- Anúncios pagos</textarea>
+        </div>
+      </div>
+
+      <div id="prompt-foto-veludo" class="tab-content">
+        <div class="card">
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:var(--azul-principal);margin-bottom:15px">Prompt: Foto Premium em Caixa de Veludo</h4>
+          <p style="margin-bottom:15px"><strong>Use em:</strong> Gemini (melhor) ou ChatGPT</p>
+          <p style="margin-bottom:15px"><strong>Ideal para:</strong> Joias, relógios, óculos, acessórios premium</p>
+          <div style="background:#f8fafc;padding:20px;border-radius:10px;border-left:4px solid var(--azul-secundario);margin:15px 0">
+            <p style="font-family:monospace;font-size:14px;line-height:1.8;white-space:pre-wrap">Crie uma imagem ultrarrealista de um <strong>[PRODUTO]</strong>, mantendo o objeto centralizado no enquadramento.
+
+O [PRODUTO] deve estar posicionado em uma caixa de veludo <strong>[COR]</strong>, disposta ao centro da composição.
+
+A iluminação precisa ser fotorealista, com sombras suaves e reflexos sutis no vidro/superfície do [PRODUTO], ressaltando seus contornos e detalhes.
+
+A estética da cena deve remeter a fotografias de produto capturadas com câmeras de alto nível, como uma Hasselblad 24mm, entregando máxima nitidez e profundidade.
+
+O fundo deve apresentar um campo de visão limpo e suave, com foco no interior da caixa e no [PRODUTO].
+
+A paleta de cores deve equilibrar tons neutros e elementos vibrantes que realcem os detalhes contrastantes do objeto.
+
+<strong>PREENCHA:</strong>
+- [PRODUTO]: ex: relógio de pulso dourado, colar de prata, óculos de sol
+- [COR]: ex: cinza, preta, azul-marinho</p>
+          </div>
+          <button onclick="copyPrompt('prompt4')" style="background:var(--azul-secundario);color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600;margin-top:10px">Copiar Prompt</button>
+          <textarea id="prompt4" style="position:absolute;left:-9999px">Crie uma imagem ultrarrealista de um [PRODUTO], mantendo o objeto centralizado no enquadramento.
+
+O [PRODUTO] deve estar posicionado em uma caixa de veludo [COR], disposta ao centro da composição.
+
+A iluminação precisa ser fotorealista, com sombras suaves e reflexos sutis no vidro/superfície do [PRODUTO], ressaltando seus contornos e detalhes.
+
+A estética da cena deve remeter a fotografias de produto capturadas com câmeras de alto nível, como uma Hasselblad 24mm, entregando máxima nitidez e profundidade.
+
+O fundo deve apresentar um campo de visão limpo e suave, com foco no interior da caixa e no [PRODUTO].
+
+A paleta de cores deve equilibrar tons neutros e elementos vibrantes que realcem os detalhes contrastantes do objeto.
+
+PREENCHA:
+- [PRODUTO]: ex: relógio de pulso dourado, colar de prata, óculos de sol
+- [COR]: ex: cinza, preta, azul-marinho</textarea>
+        </div>
+      </div>
+
+      <div id="prompt-roupa-modelo" class="tab-content">
+        <div class="card">
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:var(--azul-principal);margin-bottom:15px">Prompt: Colocar Roupa em Modelo Profissional</h4>
+          <p style="margin-bottom:15px"><strong>Use em:</strong> Gemini (melhor para pessoas) ou ChatGPT</p>
+          <p style="margin-bottom:15px"><strong>Ideal para:</strong> Vender roupas sem precisar contratar modelo</p>
+          <div style="background:#f8fafc;padding:20px;border-radius:10px;border-left:4px solid var(--azul-secundario);margin:15px 0">
+            <p style="font-family:monospace;font-size:14px;line-height:1.8;white-space:pre-wrap">Crie uma imagem em estilo de ensaio fotográfico profissional, mostrando uma modelo vestindo exatamente a peça de roupa da referência.
+
+<strong>DESCRIÇÃO DA PEÇA:</strong>
+- Tipo: <strong>[PREENCHA: blusa, vestido, calça, etc.]</strong>
+- Cor: <strong>[PREENCHA: ex: amarelo-claro, azul royal, preto]</strong>
+- Tecido: <strong>[PREENCHA: ex: leve com textura suave, jeans, malha]</strong>
+- Detalhes: <strong>[PREENCHA: ex: gola com abertura estilo lapela, mangas curtas soltas, botões frontais médios]</strong>
+- Caimento: <strong>[PREENCHA: ex: reto na cintura, ajustado, oversized]</strong>
+
+A peça deve ser idêntica à descrição, com todos os detalhes visíveis.
+
+A modelo deve ser ultrarrealista, com aparência natural, pele iluminada e postura elegante.
+
+Use orientação vertical em estética de catálogo de moda premium.
+
+O background deve ser claro, minimalista e neutro, destacando a roupa sem distrações.
+
+A iluminação deve realçar a textura do tecido, a cor e os detalhes da peça.
+
+O ângulo da câmera deve ser em plano médio ou plano americano, mostrando a peça por completo, seu caimento e sua modelagem.
+
+A pose da modelo deve ser leve e natural, com braços relaxados, transmitindo conforto e estilo.
+
+A imagem deve ter aparência editorial, acabamento de alta definição e estilo de loja de moda profissional.
+
+<strong>QUANDO USAR:</strong>
+- Vender roupas sem precisar contratar modelo
+- Mostrar como a peça fica vestida
+- Criar catálogo de moda
+- Posts de Instagram mais atrativos</p>
+          </div>
+          <button onclick="copyPrompt('prompt5')" style="background:var(--azul-secundario);color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600;margin-top:10px">Copiar Prompt</button>
+          <textarea id="prompt5" style="position:absolute;left:-9999px">Crie uma imagem em estilo de ensaio fotográfico profissional, mostrando uma modelo vestindo exatamente a peça de roupa da referência.
+
+DESCRIÇÃO DA PEÇA:
+- Tipo: [PREENCHA: blusa, vestido, calça, etc.]
+- Cor: [PREENCHA: ex: amarelo-claro, azul royal, preto]
+- Tecido: [PREENCHA: ex: leve com textura suave, jeans, malha]
+- Detalhes: [PREENCHA: ex: gola com abertura estilo lapela, mangas curtas soltas, botões frontais médios]
+- Caimento: [PREENCHA: ex: reto na cintura, ajustado, oversized]
+
+A peça deve ser idêntica à descrição, com todos os detalhes visíveis.
+
+A modelo deve ser ultrarrealista, com aparência natural, pele iluminada e postura elegante.
+
+Use orientação vertical em estética de catálogo de moda premium.
+
+O background deve ser claro, minimalista e neutro, destacando a roupa sem distrações.
+
+A iluminação deve realçar a textura do tecido, a cor e os detalhes da peça.
+
+O ângulo da câmera deve ser em plano médio ou plano americano, mostrando a peça por completo, seu caimento e sua modelagem.
+
+A pose da modelo deve ser leve e natural, com braços relaxados, transmitindo conforto e estilo.
+
+A imagem deve ter aparência editorial, acabamento de alta definição e estilo de loja de moda profissional.
+
+QUANDO USAR:
+- Vender roupas sem precisar contratar modelo
+- Mostrar como a peça fica vestida
+- Criar catálogo de moda
+- Posts de Instagram mais atrativos</textarea>
+        </div>
+      </div>
+
+      <div id="prompt-produto-uso" class="tab-content">
+        <div class="card">
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:20px;color:var(--azul-principal);margin-bottom:15px">Prompt: Produto em Uso (Ex: Tênis no Pé)</h4>
+          <p style="margin-bottom:15px"><strong>Use em:</strong> Gemini (melhor resultado) ou ChatGPT</p>
+          <p style="margin-bottom:15px"><strong>Ideal para:</strong> Tênis, sapatos, bolsas, relógios, acessórios</p>
+          <div class="alert alert-info" style="margin:15px 0">
+            <span><strong>EXEMPLO REAL:</strong> Este é o prompt que gerou a imagem do tênis no pé que você viu!</span>
+          </div>
+          <div style="background:#f8fafc;padding:20px;border-radius:10px;border-left:4px solid var(--azul-secundario);margin:15px 0">
+            <p style="font-family:monospace;font-size:14px;line-height:1.8;white-space:pre-wrap">Crie uma imagem fotorrealista mostrando <strong>[PRODUTO]</strong> sendo usado em uma situação natural do dia a dia.
+
+<strong>DESCRIÇÃO DO PRODUTO:</strong>
+- Tipo: <strong>[ex: tênis esportivo, bolsa feminina, relógio]</strong>
+- Cor principal: <strong>[ex: preto com detalhes brancos]</strong>
+- Estilo: <strong>[ex: casual, esportivo, elegante]</strong>
+- Detalhes importantes: <strong>[ex: solado branco, logo lateral]</strong>
+
+<strong>CENA:</strong>
+A pessoa deve estar <strong>[PREENCHA: caminhando na calçada, usando em ambiente urbano, na academia]</strong>.
+
+Enquadramento em plano médio fechado, focando no <strong>[PRODUTO]</strong> em uso.
+
+O background deve estar levemente desfocado (bokeh), com ambiente urbano moderno.
+
+Iluminação natural, suave e realista, como se fosse uma foto de estilo de vida capturada por iPhone 15 Pro ou câmera profissional.
+
+A pessoa usando o produto deve ter aparência natural e realista, mas sem mostrar o rosto completamente - foco no produto em uso.
+
+A estética deve ser de fotografia lifestyle moderna, como catálogo de marca premium.
+
+<strong>AJUSTE CONFORME SEU PRODUTO:</strong>
+- Tênis: pessoa caminhando na rua
+- Bolsa: pessoa carregando em ambiente urbano
+- Relógio: pulso em close, ambiente sofisticado
+- Óculos: pessoa usando em ambiente externo</p>
+          </div>
+          <button onclick="copyPrompt('prompt6')" style="background:var(--azul-secundario);color:white;border:none;padding:10px 20px;border-radius:8px;cursor:pointer;font-weight:600;margin-top:10px">Copiar Prompt</button>
+          <textarea id="prompt6" style="position:absolute;left:-9999px">Crie uma imagem fotorrealista mostrando [PRODUTO] sendo usado em uma situação natural do dia a dia.
+
+DESCRIÇÃO DO PRODUTO:
+- Tipo: [ex: tênis esportivo, bolsa feminina, relógio]
+- Cor principal: [ex: preto com detalhes brancos]
+- Estilo: [ex: casual, esportivo, elegante]
+- Detalhes importantes: [ex: solado branco, logo lateral]
+
+CENA:
+A pessoa deve estar [PREENCHA: caminhando na calçada, usando em ambiente urbano, na academia].
+
+Enquadramento em plano médio fechado, focando no [PRODUTO] em uso.
+
+O background deve estar levemente desfocado (bokeh), com ambiente urbano moderno.
+
+Iluminação natural, suave e realista, como se fosse uma foto de estilo de vida capturada por iPhone 15 Pro ou câmera profissional.
+
+A pessoa usando o produto deve ter aparência natural e realista, mas sem mostrar o rosto completamente - foco no produto em uso.
+
+A estética deve ser de fotografia lifestyle moderna, como catálogo de marca premium.
+
+AJUSTE CONFORME SEU PRODUTO:
+- Tênis: pessoa caminhando na rua
+- Bolsa: pessoa carregando em ambiente urbano
+- Relógio: pulso em close, ambiente sofisticado
+- Óculos: pessoa usando em ambiente externo</textarea>
+        </div>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:50px 0 20px">Passo a Passo: Como Usar os Prompts</h3>
+
+      <div class="step-card" style="background:var(--branco);border-left:5px solid var(--amarelo-acento);padding:25px;margin:20px 0;border-radius:12px">
+        <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+          <div style="background:var(--amarelo-acento);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px">1</div>
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;margin:0">Escolha a IA</h4>
+        </div>
+        <p>Para <strong>textos:</strong> ChatGPT ou Gemini</p>
+        <p>Para <strong>imagens:</strong> Gemini (melhor) ou ChatGPT</p>
+      </div>
+
+      <div class="step-card" style="background:var(--branco);border-left:5px solid var(--amarelo-acento);padding:25px;margin:20px 0;border-radius:12px">
+        <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+          <div style="background:var(--amarelo-acento);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px">2</div>
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;margin:0">Copie o Prompt</h4>
+        </div>
+        <p>Clique no botão "Copiar Prompt" do prompt que você quer usar</p>
+      </div>
+
+      <div class="step-card" style="background:var(--branco);border-left:5px solid var(--amarelo-acento);padding:25px;margin:20px 0;border-radius:12px">
+        <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+          <div style="background:var(--amarelo-acento);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px">3</div>
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;margin:0">Personalize</h4>
+        </div>
+        <p>Substitua as partes entre <strong>[COLCHETES]</strong> com informações do seu produto</p>
+        <p>Exemplo: troque [PRODUTO] por "tênis Nike preto"</p>
+      </div>
+
+      <div class="step-card" style="background:var(--branco);border-left:5px solid var(--amarelo-acento);padding:25px;margin:20px 0;border-radius:12px">
+        <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+          <div style="background:var(--amarelo-acento);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px">4</div>
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;margin:0">Cole na IA</h4>
+        </div>
+        <p>Cole o prompt personalizado no ChatGPT, Gemini ou Grok</p>
+        <p>Se for prompt de imagem, faça upload da foto do produto ANTES de colar o prompt</p>
+      </div>
+
+      <div class="step-card" style="background:var(--branco);border-left:5px solid var(--amarelo-acento);padding:25px;margin:20px 0;border-radius:12px">
+        <div style="display:flex;align-items:center;gap:15px;margin-bottom:15px">
+          <div style="background:var(--amarelo-acento);color:var(--azul-escuro);width:50px;height:50px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px">5</div>
+          <h4 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;margin:0">Gere e Ajuste</h4>
+        </div>
+        <p>Pressione Enter e aguarde a IA gerar</p>
+        <p>Se não gostar do resultado, peça ajustes: "Faça a iluminação mais suave" ou "Deixe o título mais curto"</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Resultado Final</h3>
+        <p style="font-size:18px;margin-top:15px">Com estes prompts, você transforma:</p>
+        <div style="display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;margin-top:25px;text-align:left">
+          <div style="background:rgba(220,38,38,0.1);padding:20px;border-radius:10px;border:2px solid #dc2626">
+            <p style="font-weight:700;margin-bottom:10px;color:#dc2626">ANTES (foto de celular)</p>
+            <p style="font-size:14px">Foto caseira, fundo bagunçado, iluminação ruim, sem contexto</p>
+          </div>
+          <div style="font-size:32px;font-weight:800;color:var(--azul-principal)">→</div>
+          <div style="background:rgba(34,197,94,0.1);padding:20px;border-radius:10px;border:2px solid #059669">
+            <p style="font-weight:700;margin-bottom:10px;color:#059669">DEPOIS (com IA)</p>
+            <p style="font-size:14px">Foto profissional, fundo limpo, iluminação perfeita, produto em destaque</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="alert alert-success">
+        <span><strong>DICA PROSPERA RIO:</strong> Guarde todos os prompts! Você vai usar várias vezes. Crie uma pasta no celular com prints dos prompts que funcionaram melhor.</span>
+      </div>
+
+    </section>
+
+    <section class="section" id="anuncio">
+      <div class="section-header">
+        <h2 class="section-title">Como Criar um Anúncio Perfeito</h2>
+        <p class="section-subtitle">Fotos, título e descrição que vendem</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Regras de Ouro para Anúncios</h3>
+        <p style="font-size:16px;margin-top:10px">Siga este guia para criar anúncios profissionais na Shopee E Mercado Livre</p>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:30px 0 20px">1. Fotografia Profissional</h3>
+      
+      <div class="card">
+        <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:18px;color:var(--azul-principal);margin-bottom:15px">Configuração Ideal</h4>
+        <ul style="list-style:none;padding:0">
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Iluminação:</strong> Luz natural indireta próxima à janela ou lâmpada branca forte
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Fundo:</strong> Branco, cinza claro ou bege - sem distrações
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Ângulos:</strong> Frontal, laterais (esquerda e direita), superior e detalhes importantes
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Qualidade:</strong> Mínimo 800x600 pixels (celular moderno já basta)
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Quantidade:</strong> 6-10 fotos por produto
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Contexto:</strong> Pelo menos 1 foto mostrando o produto em uso
+          </li>
+        </ul>
+      </div>
+
+      <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:18px;color:var(--azul-principal);margin:25px 0 15px">Sequência Recomendada de Fotos</h4>
+      <div class="photo-grid">
+        <div class="photo-example">Foto 1: Frontal</div>
+        <div class="photo-example">Foto 2: Lateral Direita</div>
+        <div class="photo-example">Foto 3: Lateral Esquerda</div>
+        <div class="photo-example">Foto 4: Superior</div>
+        <div class="photo-example">Foto 5: Detalhes</div>
+        <div class="photo-example">Foto 6: Em Uso</div>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:40px 0 20px">2. Título Estratégico</h3>
+      
+      <div class="card">
+        <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:18px;color:var(--azul-principal);margin-bottom:15px">Fórmula do Título Perfeito</h4>
+        <div style="background:var(--amarelo-acento);padding:15px;border-radius:10px;margin:15px 0;text-align:center">
+          <strong style="font-size:16px">MARCA + TIPO DE PRODUTO + CARACTERÍSTICA PRINCIPAL + COR/TAMANHO + BENEFÍCIO</strong>
+        </div>
+
+        <h4 style="margin-top:25px;margin-bottom:15px">Exemplos Práticos:</h4>
+        
+        <div style="background:#fef2f2;border-left:4px solid #dc2626;padding:15px;margin:10px 0;border-radius:8px">
+          <strong style="color:#dc2626">RUIM:</strong> "Camiseta bonita"
+        </div>
+        <div style="background:#f0fdf4;border-left:4px solid #059669;padding:15px;margin:10px 0;border-radius:8px">
+          <strong style="color:#059669">BOM:</strong> "Camiseta Nike Dri-FIT Masculina Preta Academia Corrida Tamanho G"
+        </div>
+
+        <div style="background:#fef2f2;border-left:4px solid #dc2626;padding:15px;margin:10px 0;border-radius:8px">
+          <strong style="color:#dc2626">RUIM:</strong> "Panela"
+        </div>
+        <div style="background:#f0fdf4;border-left:4px solid #059669;padding:15px;margin:10px 0;border-radius:8px">
+          <strong style="color:#059669">BOM:</strong> "Panela Antiaderente Tramontina 24cm Tampa Vidro Vermelha Indução"
+        </div>
+
+        <div style="background:#fef2f2;border-left:4px solid #dc2626;padding:15px;margin:10px 0;border-radius:8px">
+          <strong style="color:#dc2626">RUIM:</strong> "Fone de ouvido"
+        </div>
+        <div style="background:#f0fdf4;border-left:4px solid #059669;padding:15px;margin:10px 0;border-radius:8px">
+          <strong style="color:#059669">BOM:</strong> "Fone Bluetooth JBL Tune 510BT Branco Sem Fio 40h Bateria Dobrável"
+        </div>
+      </div>
+
+      <h3 style="font-family:'Montserrat',sans-serif;font-weight:700;font-size:24px;color:var(--azul-principal);margin:40px 0 20px">3. Descrição Completa</h3>
+      
+      <div class="card">
+        <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:18px;color:var(--azul-principal);margin-bottom:15px">O Que SEMPRE Incluir</h4>
+        <ul style="list-style:none;padding:0">
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Especificações:</strong> Tamanho, peso, material, cor, voltagem
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>O que acompanha:</strong> Lista completa (manual, cabos, acessórios)
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Benefícios:</strong> Para que serve, o que melhora na vida do cliente
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Como usar:</strong> Instruções simples se necessário
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Garantia:</strong> Quanto tempo e como acionar
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Prazo de envio:</strong> Quantos dias para postar
+          </li>
+          <li style="margin-bottom:10px;padding-left:25px;position:relative">
+            <span style="position:absolute;left:0;color:var(--azul-secundario);font-weight:800">✓</span>
+            <strong>Política de troca:</strong> Condições para trocar ou devolver
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4 style="font-family:'Montserrat',sans-serif;font-weight:600;font-size:18px;color:var(--azul-principal);margin-bottom:15px">Template de Descrição - Copie e Adapte</h4>
+        <div style="background:#f8fafc;padding:20px;border-radius:10px;border-left:4px solid var(--azul-secundario);font-size:14px;line-height:1.8">
+          <p><strong>SOBRE O PRODUTO</strong></p>
+          <p>[Descrição geral do produto e marca]</p>
+          
+          <p style="margin-top:15px"><strong>ESPECIFICAÇÕES</strong></p>
+          <p>• Material: [ex: algodão]<br>
+          • Tamanho: [ex: P, M, G]<br>
+          • Cor: [ex: azul marinho]<br>
+          • Peso: [ex: 500g]</p>
+
+          <p style="margin-top:15px"><strong>O QUE ACOMPANHA</strong></p>
+          <p>• [ex: 1 camiseta]<br>
+          • [ex: embalagem original]<br>
+          • [ex: manual de cuidados]</p>
+
+          <p style="margin-top:15px"><strong>GARANTIA E TROCAS</strong></p>
+          <p>Garantia de [X] dias contra defeitos de fabricação<br>
+          Troca em até 7 dias se produto vier com defeito ou diferente do anunciado</p>
+
+          <p style="margin-top:15px"><strong>ENVIO</strong></p>
+          <p>Postamos em até [X] dias úteis após confirmação do pagamento<br>
+          Rastreamento disponível</p>
+        </div>
+      </div>
+
+      <div class="alert alert-warning">
+        <span><strong>IMPORTANTE:</strong> NUNCA copie preço da concorrência sem calcular! Use a calculadora na próxima seção para definir preço com lucro real.</span>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Checklist Antes de Publicar</h3>
+        <div style="text-align:left;max-width:600px;margin:20px auto 0;font-size:15px">
+          <p style="margin:8px 0">✓ 6-8 fotos nítidas com boa iluminação</p>
+          <p style="margin:8px 0">✓ Título com marca, produto, característica, cor e tamanho</p>
+          <p style="margin:8px 0">✓ Descrição completa com todas as especificações</p>
+          <p style="margin:8px 0">✓ Preço calculado com margem de lucro</p>
+          <p style="margin:8px 0">✓ Categoria e atributos preenchidos corretamente</p>
+          <p style="margin:8px 0">✓ Estoque atualizado</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="calculadora">
+      <div class="section-header">
+        <h2 class="section-title">Calculadora de Preços</h2>
+        <p class="section-subtitle">Calcule o preço ideal com todas as taxas incluídas</p>
+      </div>
+
+      <div class="tab-buttons">
+        <button class="tab-button active" onclick="switchTab('calc-shopee',this)">Shopee</button>
+        <button class="tab-button" onclick="switchTab('calc-ml',this)">Mercado Livre</button>
+      </div>
+
+      <div id="calc-shopee" class="tab-content active">
+        <div class="highlight-card">
+          <h3>Taxas da Shopee</h3>
+          <p style="font-size:16px;margin-top:10px">Frete Pago pelo Cliente: <strong>14% + R$ 4,00</strong><br>Frete Grátis (vendedor paga): <strong>20% + R$ 4,00</strong></p>
+        </div>
+
+        <div class="calculator-section">
+          <h3 style="text-align:center;margin-bottom:25px;font-size:24px">Calculadora Shopee</h3>
+          <div class="calc-grid">
+            <div>
+              <label style="display:block;margin-bottom:8px;font-weight:600">Custo do Produto (R$)</label>
+              <input type="number" id="custo-shopee" class="calc-input" placeholder="Ex: 50.00" step="0.01" min="0">
+            </div>
+            <div>
+              <label style="display:block;margin-bottom:8px;font-weight:600">Margem Desejada (%)</label>
+              <input type="number" id="margem-shopee" class="calc-input" placeholder="Ex: 40" step="1" min="0">
+            </div>
+            <div>
+              <label style="display:block;margin-bottom:8px;font-weight:600">Tipo de Frete</label>
+              <select id="frete-shopee" class="calc-select">
+                <option value="pago">Frete Pago pelo Cliente (14%)</option>
+                <option value="gratis">Frete Grátis - Você Paga (20%)</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block;margin-bottom:8px;font-weight:600">Custo Frete (R$) - opcional</label>
+              <input type="number" id="frete-valor-shopee" class="calc-input" placeholder="Ex: 15.00" step="0.01" min="0">
+            </div>
+          </div>
+          <button class="calc-button" onclick="calcShopee()">Calcular Preço de Venda</button>
+          <div id="result-shopee" class="result-display"></div>
+        </div>
+      </div>
+
+      <div id="calc-ml" class="tab-content">
+        <div class="highlight-card">
+          <h3>Taxas do Mercado Livre</h3>
+          <p style="font-size:16px;margin-top:10px">Comissão varia por categoria (11,5% a 18%)<br>+ Mercado Pago: <strong>4,99% + R$ 0,40</strong></p>
+        </div>
+
+        <div class="calculator-section">
+          <h3 style="text-align:center;margin-bottom:25px;font-size:24px">Calculadora Mercado Livre</h3>
+          <div class="calc-grid">
+            <div>
+              <label style="display:block;margin-bottom:8px;font-weight:600">Custo do Produto (R$)</label>
+              <input type="number" id="custo-ml" class="calc-input" placeholder="Ex: 50.00" step="0.01" min="0">
+            </div>
+            <div>
+              <label style="display:block;margin-bottom:8px;font-weight:600">Margem Desejada (%)</label>
+              <input type="number" id="margem-ml" class="calc-input" placeholder="Ex: 40" step="1" min="0">
+            </div>
+            <div>
+              <label style="display:block;margin-bottom:8px;font-weight:600">Categoria</label>
+              <select id="categoria-ml" class="calc-select">
+                <option value="11.5">Eletrônicos (11,5%)</option>
+                <option value="13">Casa e Jardim (13%)</option>
+                <option value="15">Moda e Beleza (15%)</option>
+                <option value="16">Esportes (16%)</option>
+                <option value="17">Brinquedos (17%)</option>
+                <option value="18">Livros (18%)</option>
+              </select>
+            </div>
+            <div>
+              <label style="display:block;margin-bottom:8px;font-weight:600">Tipo de Anúncio</label>
+              <select id="tipo-ml" class="calc-select">
+                <option value="0">Gratuito (sem taxa extra)</option>
+                <option value="4">Clássico (+4%)</option>
+                <option value="2">Premium (+2%)</option>
+              </select>
+            </div>
+          </div>
+          <button class="calc-button" onclick="calcML()">Calcular Preço de Venda</button>
+          <div id="result-ml" class="result-display"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="whatsapp">
+      <div class="section-header">
+        <h2 class="section-title">WhatsApp Business</h2>
+        <p class="section-subtitle">Venda direto sem pagar comissão</p>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Por Que Usar WhatsApp Business?</h3>
+        <p style="font-size:18px;margin-top:10px"><strong>0% de comissão!</strong> Todo lucro é seu. Ideal para complementar vendas nos marketplaces.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3 class="feature-title">Vantagens</h3>
+          <ul>
+            <li>Sem comissão (100% do lucro é seu)</li>
+            <li>Contato direto com cliente</li>
+            <li>Atendimento personalizado</li>
+            <li>Catálogo de produtos integrado</li>
+            <li>Respostas automáticas</li>
+            <li>Perfil comercial profissional</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title">Como Configurar (10 min)</h3>
+          <ul>
+            <li>Baixe "WhatsApp Business" (app verde com B)</li>
+            <li>Cadastre número comercial</li>
+            <li>Preencha perfil: nome, categoria, horário</li>
+            <li>Adicione descrição do negócio</li>
+            <li>Configure mensagem automática</li>
+            <li>Crie catálogo de produtos</li>
+          </ul>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title">Criar Catálogo</h3>
+          <ul>
+            <li>Abra WhatsApp Business</li>
+            <li>Menu (3 pontos) → Ferramentas comerciais</li>
+            <li>Catálogo → Adicionar item</li>
+            <li>Foto, nome, preço, descrição</li>
+            <li>Salvar produto</li>
+            <li>Compartilhar catálogo com clientes</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <table class="modern-table">
+          <thead>
+            <tr>
+              <th>Recurso</th>
+              <th>Como Usar</th>
+              <th>Benefício</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Mensagem Automática</strong></td>
+              <td>Configure resposta quando estiver offline</td>
+              <td>Cliente não fica sem resposta</td>
+            </tr>
+            <tr>
+              <td><strong>Respostas Rápidas</strong></td>
+              <td>Salve mensagens frequentes com "/" </td>
+              <td>Agiliza atendimento</td>
+            </tr>
+            <tr>
+              <td><strong>Etiquetas</strong></td>
+              <td>Organize clientes por status (novo, pedido, pago)</td>
+              <td>Controle de vendas</td>
+            </tr>
+            <tr>
+              <td><strong>Catálogo</strong></td>
+              <td>Mostre produtos com foto e preço</td>
+              <td>Cliente vê tudo organizado</td>
+            </tr>
+            <tr>
+              <td><strong>Link Direto</strong></td>
+              <td>wa.me/seu-numero</td>
+              <td>Cliente clica e já abre conversa</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="alert alert-info">
+        <span><strong>Dica Prospera Rio:</strong> Use WhatsApp para clientes fiéis e marketplaces para clientes novos. Assim você maximiza lucro e alcance!</span>
+      </div>
+    </section>
+
+    <section class="section" id="fornecedores">
+      <div class="section-header">
+        <h2 class="section-title">Onde Encontrar Produtos</h2>
+        <p class="section-subtitle">Fornecedores e estratégias de sourcing</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3 class="feature-title">1. Produção Própria</h3>
+          <p><strong>Você faz o produto</strong></p>
+          <ul>
+            <li>Artesanato, costura, comida</li>
+            <li>Arte, customização</li>
+            <li>Serviços personalizados</li>
+          </ul>
+          <p style="margin-top:15px"><strong>Vantagem:</strong> Margem alta, exclusivo</p>
+          <p><strong>Desvantagem:</strong> Tempo para produzir</p>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title">2. Revenda Atacado</h3>
+          <p><strong>Compra barato, vende caro</strong></p>
+          <ul>
+            <li>Compra em quantidade (10+ unid)</li>
+            <li>Produtos prontos</li>
+            <li>Entrega rápida</li>
+          </ul>
+          <p style="margin-top:15px"><strong>Vantagem:</strong> Qualidade conhecida</p>
+          <p><strong>Desvantagem:</strong> Precisa investir</p>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title">3. Dropshipping</h3>
+          <p><strong>Venda sem estoque</strong></p>
+          <ul>
+            <li>Fornecedor envia direto</li>
+            <li>Zero investimento inicial</li>
+            <li>Sem necessidade de espaço</li>
+          </ul>
+          <p style="margin-top:15px"><strong>Vantagem:</strong> Sem risco de estoque</p>
+          <p><strong>Desvantagem:</strong> Margem menor, prazo</p>
+        </div>
+      </div>
+
+      <div class="highlight-card">
+        <h3>Polos Atacadistas PERTO DE VOCÊ</h3>
+        <p style="font-size:18px">Baixada Fluminense - Economize em transporte!</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card" style="border-left:5px solid var(--amarelo-acento)">
+          <h3 class="feature-title">Mega Brás Brasil (Nova Iguaçu)</h3>
+          <p><strong>Endereço:</strong> Rua Frederico de Castro Pereira, 731 - Jardim Tropical</p>
+          <p><strong>Horário:</strong> Ter-Sex: 9h-18h | Sáb: 9h-19h</p>
+          <p><strong>Produtos:</strong> Moda feminina, masculina, infantil, calçados</p>
+          <ul style="margin-top:10px">
+            <li>100+ lojas em um lugar</li>
+            <li>Peças a partir de R$ 9,99</li>
+            <li>Atacado mín. 3 peças</li>
+            <li>Estacionamento próprio</li>
+          </ul>
+          <p style="margin-top:10px"><strong>Instagram:</strong> @megabrasbrasil</p>
+          <p><strong>Como chegar:</strong> Próx. estação Mesquita (11 min a pé)</p>
+        </div>
+
+        <div class="feature-card" style="border-left:5px solid var(--amarelo-acento)">
+          <h3 class="feature-title">Feirão Moda Rio (Duque de Caxias)</h3>
+          <p><strong>Endereço:</strong> Rod. Washington Luiz, 1308 - Jardim Gramacho</p>
+          <p><strong>Horário:</strong> Qua, Sex, Sáb: 8h-18h</p>
+          <p><strong>Produtos:</strong> Moda feminina, masculina, infantil, plus size</p>
+          <ul style="margin-top:10px">
+            <li>400+ lojas de fábrica</li>
+            <li>Preço direto da produção</li>
+            <li>Praça de alimentação</li>
+            <li>Estacionamento grátis</li>
+          </ul>
+          <p style="margin-top:10px"><strong>Instagram:</strong> @feiraomodario</p>
+          <p><strong>Site:</strong> feiraomodario.com.br</p>
+        </div>
+
+        <div class="feature-card" style="border-left:5px solid var(--amarelo-acento)">
+          <h3 class="feature-title">Feirão das Malhas (Duque de Caxias)</h3>
+          <p><strong>Endereço:</strong> Rod. Washington Luiz, 6720 - Jardim Gramacho</p>
+          <p><strong>Horário:</strong> Qua, Sex, Sáb: 8h-18h</p>
+          <p><strong>Produtos:</strong> Especializado em malhas petropolitanas</p>
+          <ul style="margin-top:10px">
+            <li>650+ lojas de fábrica</li>
+            <li>Plus size (muito procurado)</li>
+            <li>Masculino e infantil</li>
+            <li>Preço de fábrica</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="table-card">
+        <h3 style="padding:20px 20px 0;color:var(--azul-principal)">Outros Polos Atacadistas</h3>
+        <table class="modern-table">
+          <thead>
+            <tr>
+              <th>Local</th>
+              <th>Especialidade</th>
+              <th>Como Comprar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>25 de Março (SP)</strong></td>
+              <td>Moda, acessórios, utilidades, brinquedos</td>
+              <td>Presencial ou online (alguns lojistas)</td>
+            </tr>
+            <tr>
+              <td><strong>SAARA (Rio Centro)</strong></td>
+              <td>Tecidos, roupas, acessórios, decoração</td>
+              <td>Presencial, algumas lojas entregam</td>
+            </tr>
+            <tr>
+              <td><strong>Brás (SP)</strong></td>
+              <td>Roupas, cama/mesa/banho, moda íntima</td>
+              <td>Presencial ou representantes</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3 class="feature-title">Fornecedores Online Nacionais</h3>
+          <ul>
+            <li>Atacadão da Moda</li>
+            <li>Feira da Madrugada Online</li>
+            <li>Moda Center Santa Cruz</li>
+            <li>Atacado.com</li>
+          </ul>
+          <p style="margin-top:10px"><strong>Prazo:</strong> 5-15 dias</p>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title">Importação (China)</h3>
+          <ul>
+            <li>AliExpress</li>
+            <li>1688.com</li>
+            <li>CJ Dropshipping</li>
+            <li>DSers</li>
+          </ul>
+          <p style="margin-top:10px"><strong>Prazo:</strong> 30-60 dias</p>
+          <div class="alert alert-warning" style="margin-top:10px;font-size:13px;padding:10px">
+            Atenção: Prazo longo, risco alfandegário
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <h3 class="feature-title">Parcerias Locais</h3>
+          <p>Produtores da sua comunidade:</p>
+          <ul>
+            <li>Artesanato local</li>
+            <li>Comida caseira</li>
+            <li>Costura e customização</li>
+            <li>Arte e decoração</li>
+          </ul>
+          <p style="margin-top:10px"><strong>Vantagem:</strong> Economia local, exclusividade</p>
+        </div>
+      </div>
+
+      <div class="alert alert-success">
+        <span><strong>Dica Prospera Rio:</strong> Comece com 1-2 fornecedores confiáveis. Teste qualidade ANTES de anunciar. Cliente satisfeito volta, insatisfeito destrói reputação!</span>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="section-header">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+      </div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Posso vender sem CNPJ?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Sim!</strong> Tanto Shopee quanto Mercado Livre permitem venda como Pessoa Física (CPF). Para escala maior, considere abrir MEI.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Como recebo o pagamento das vendas?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Shopee:</strong> Após confirmação da entrega (aproximadamente 7 dias úteis), solicite saque para sua conta bancária.</p>
+            <p><strong>Mercado Livre:</strong> O dinheiro fica no Mercado Pago e você transfere para sua conta.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Qual o prazo para enviar?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>O padrão é <strong>até 2 dias úteis</strong> após confirmação do pagamento. Cumprir é essencial para manter boa reputação.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Qual marketplace é melhor?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p><strong>Shopee:</strong> Melhor para ticket baixo (até R$ 100), custos menores, ideal para iniciantes.</p>
+            <p><strong>Mercado Livre:</strong> Melhor para ticket alto (R$ 100+), maior confiança, ideal para crescimento.</p>
+            <p><strong>Dica:</strong> Venda nos dois para diversificar!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>E se o cliente quiser devolver?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Por lei (CDC), cliente tem 7 dias para devolver sem justificativa (arrependimento).</p>
+            <p>Se produto vier com defeito: 90 dias de garantia legal.</p>
+            <p>Aceite trocas de boa vontade - avaliação ruim prejudica MUITO!</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" onclick="toggleFAQ(this)">
+            <span>Preciso ter muito estoque?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p><strong>NÃO.</strong> Comece com 5-10 produtos. Conforme vender, você reabastece.</p>
+            <p>Só anuncie o que você TEM em mãos (ou fornecedor com prazo garantido).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="glossario">
+      <div class="section-header">
+        <h2 class="section-title">Glossário de Termos</h2>
+      </div>
+      <div class="glossary-grid">
+        <div class="glossary-card">
+          <div class="glossary-term">Marketplace</div>
+          <div class="glossary-definition">Plataforma que conecta vendedores e compradores, cuidando de pagamento e infraestrutura.</div>
+        </div>
+        <div class="glossary-card">
+          <div class="glossary-term">SKU</div>
+          <div class="glossary-definition">Stock Keeping Unit - Código único para cada produto/variação no estoque.</div>
+        </div>
+        <div class="glossary-card">
+          <div class="glossary-term">Taxa de Conversão</div>
+          <div class="glossary-definition">Percentual de visitantes que compram. Ex: 100 visitas, 3 vendas = 3%.</div>
+        </div>
+        <div class="glossary-card">
+          <div class="glossary-term">Comissão</div>
+          <div class="glossary-definition">Percentual cobrado pelo marketplace sobre cada venda (ex: 14% ou 20%) + taxa fixa.</div>
+        </div>
+        <div class="glossary-card">
+          <div class="glossary-term">SLA</div>
+          <div class="glossary-definition">Service Level Agreement - Acordo de nível de serviço: tempo de resposta, envio etc.</div>
+        </div>
+        <div class="glossary-card">
+          <div class="glossary-term">Chargeback</div>
+          <div class="glossary-definition">Contestação de pagamento; pode ocorrer por fraude, não entrega ou divergência.</div>
+        </div>
+        <div class="glossary-card">
+          <div class="glossary-term">Cross-selling</div>
+          <div class="glossary-definition">Vender produtos complementares ao item principal.</div>
+        </div>
+        <div class="glossary-card">
+          <div class="glossary-term">Ticket Médio</div>
+          <div class="glossary-definition">Faturamento total dividido pelo número de vendas no período.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h3>Casa Prospera Maré</h3>
+          <p><strong>Endereço:</strong><br>Rua Teixeira Ribeiro, 527<br>Maré - Rio de Janeiro/RJ</p>
+          <p><strong>WhatsApp:</strong><br><a href="https://wa.me/5521975150995">(21) 97515-0995</a></p>
+          <p><strong>E-mail:</strong><br><a href="mailto:casaprosperamare@gmail.com">casaprosperamare@gmail.com</a></p>
+          <div class="footer-highlight">
+            <strong>Horário:</strong><br>Segunda a Sexta: 9h às 17h
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Casa Prospera Jacarezinho</h3>
+          <p><strong>Endereço:</strong><br>Rua Amaro Rangel, 49<br>Jacarezinho - Rio de Janeiro/RJ</p>
+          <p><strong>WhatsApp:</strong><br><a href="https://wa.me/5521970387576">(21) 97038-7576</a></p>
+          <p><strong>E-mail:</strong><br><a href="mailto:prosperajacarezinho@gmail.com">prosperajacarezinho@gmail.com</a></p>
+          <div class="footer-highlight">
+            <strong>Horário:</strong><br>Segunda a Sexta: 9h às 17h
+          </div>
+        </div>
+        <div class="footer-section">
+          <img src="https://lh3.googleusercontent.com/d/1x5sNkC9vd7CI78y0xdkWvgoadxPEMcIf=w800" alt="Prospera Rio" class="footer-logo">
+          <h3>Sobre o Prospera Rio</h3>
+          <p>Iniciativa do Instituto BrArte que apoia empreendedores da Maré e Jacarezinho.</p>
+          <p><strong>Site:</strong><br><a href="https://www.institutobrarte.org" target="_blank" rel="noopener">www.institutobrarte.org</a></p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/prospera.rio" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.institutobrarte.org" target="_blank" rel="noopener">Site</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Prospera Rio - Instituto BrArte. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function switchTab(id, btn) {
+      const parent = btn.parentElement;
+      parent.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      const section = parent.parentElement;
+      section.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function calcShopee() {
+      const custo = parseFloat(document.getElementById('custo-shopee').value) || 0;
+      const margem = parseFloat(document.getElementById('margem-shopee').value) || 0;
+      const tipo = document.getElementById('frete-shopee').value;
+      const freteVal = parseFloat(document.getElementById('frete-valor-shopee').value) || 0;
+      
+      if (custo <= 0 || margem <= 0) {
+        alert('Preencha custo e margem');
+        return;
+      }
+      
+      const comissao = tipo === 'gratis' ? 0.20 : 0.14;
+      const taxaFixa = 4;
+      const precoMargem = custo * (1 + margem / 100);
+      
+      let precoFinal;
+      if (tipo === 'gratis') {
+        precoFinal = (precoMargem + taxaFixa + freteVal) / (1 - comissao);
+      } else {
+        precoFinal = (precoMargem + taxaFixa) / (1 - comissao);
+      }
+      
+      const valCom = precoFinal * comissao;
+      const custoTot = custo + (tipo === 'gratis' ? freteVal : 0);
+      const lucro = precoFinal - valCom - taxaFixa - custoTot;
+      const margemReal = (lucro / precoFinal) * 100;
+      
+      document.getElementById('result-shopee').innerHTML = `
+        <div style="text-align:center">
+          <p style="font-size:32px;font-weight:800;color:#ECC203;margin-bottom:20px">R$ ${precoFinal.toFixed(2)}</p>
+          <div style="background:rgba(255,255,255,0.1);padding:20px;border-radius:10px;text-align:left">
+            <p style="margin:8px 0"><strong>Custo do produto:</strong> R$ ${custo.toFixed(2)}</p>
+            <p style="margin:8px 0"><strong>Preço com ${margem}% margem:</strong> R$ ${precoMargem.toFixed(2)}</p>
+            <p style="margin:8px 0"><strong>Comissão Shopee (${(comissao * 100).toFixed(0)}%):</strong> R$ ${valCom.toFixed(2)}</p>
+            <p style="margin:8px 0"><strong>Taxa Fixa:</strong> R$ ${taxaFixa.toFixed(2)}</p>
+            ${tipo === 'gratis' && freteVal > 0 ? `<p style="margin:8px 0"><strong>Frete:</strong> R$ ${freteVal.toFixed(2)}</p>` : ''}
+            <hr style="margin:15px 0;border:1px solid rgba(255,255,255,0.2)">
+            <p style="margin:8px 0;font-size:18px"><strong>LUCRO LÍQUIDO:</strong> <span style="color:#ECC203">R$ ${lucro.toFixed(2)}</span></p>
+            <p style="margin:8px 0"><strong>Margem Real:</strong> ${margemReal.toFixed(1)}%</p>
+            <p style="margin:8px 0"><strong>ROI:</strong> ${((lucro/custo)*100).toFixed(1)}%</p>
+          </div>
+        </div>
+      `;
+      document.getElementById('result-shopee').style.display = 'block';
+    }
+
+    function calcML() {
+      const custo = parseFloat(document.getElementById('custo-ml').value) || 0;
+      const margem = parseFloat(document.getElementById('margem-ml').value) || 0;
+      const cat = parseFloat(document.getElementById('categoria-ml').value);
+      const tipoAd = parseFloat(document.getElementById('tipo-ml').value);
+      
+      if (custo <= 0 || margem <= 0) {
+        alert('Preencha custo e margem');
+        return;
+      }
+      
+      const taxaCat = cat / 100;
+      const taxaMP = 0.0499;
+      const fixaMP = 0.40;
+      const taxaAnuncio = tipoAd / 100;
+      
+      const precoMargem = custo * (1 + margem / 100);
+      const precoFinal = (precoMargem + fixaMP) / (1 - taxaCat - taxaMP - taxaAnuncio);
+      
+      const valCat = precoFinal * taxaCat;
+      const valMP = precoFinal * taxaMP + fixaMP;
+      const valAd = precoFinal * taxaAnuncio;
+      const lucro = precoFinal - valCat - valMP - valAd - custo;
+      const margemReal = (lucro / precoFinal) * 100;
+      
+      document.getElementById('result-ml').innerHTML = `
+        <div style="text-align:center">
+          <p style="font-size:32px;font-weight:800;color:#ECC203;margin-bottom:20px">R$ ${precoFinal.toFixed(2)}</p>
+          <div style="background:rgba(255,255,255,0.1);padding:20px;border-radius:10px;text-align:left">
+            <p style="margin:8px 0"><strong>Custo do produto:</strong> R$ ${custo.toFixed(2)}</p>
+            <p style="margin:8px 0"><strong>Preço com ${margem}% margem:</strong> R$ ${precoMargem.toFixed(2)}</p>
+            <p style="margin:8px 0"><strong>Comissão ML (${cat}%):</strong> R$ ${valCat.toFixed(2)}</p>
+            <p style="margin:8px 0"><strong>Mercado Pago (4,99% + R$ 0,40):</strong> R$ ${valMP.toFixed(2)}</p>
+            ${tipoAd > 0 ? `<p style="margin:8px 0"><strong>Taxa Anúncio (${tipoAd}%):</strong> R$ ${valAd.toFixed(2)}</p>` : ''}
+            <hr style="margin:15px 0;border:1px solid rgba(255,255,255,0.2)">
+            <p style="margin:8px 0;font-size:18px"><strong>LUCRO LÍQUIDO:</strong> <span style="color:#ECC203">R$ ${lucro.toFixed(2)}</span></p>
+            <p style="margin:8px 0"><strong>Margem Real:</strong> ${margemReal.toFixed(1)}%</p>
+            <p style="margin:8px 0"><strong>ROI:</strong> ${((lucro/custo)*100).toFixed(1)}%</p>
+          </div>
+        </div>
+      `;
+      document.getElementById('result-ml').style.display = 'block';
+    }
+
+    function toggleFAQ(btn) {
+      const item = btn.closest('.faq-item');
+      const isActive = item.classList.contains('active');
+      
+      document.querySelectorAll('.faq-item').forEach(i => {
+        i.classList.remove('active');
+        i.querySelector('.faq-icon').textContent = '+';
+      });
+      
+      if (!isActive) {
+        item.classList.add('active');
+        btn.querySelector('.faq-icon').textContent = '–';
+      }
+    }
+
+    function copyPrompt(id) {
+      const textarea = document.getElementById(id);
+      textarea.select();
+      textarea.setSelectionRange(0, 99999);
+      
+      try {
+        document.execCommand('copy');
+        alert('Prompt copiado! Cole no ChatGPT, Gemini ou Grok');
+      } catch(err) {
+        navigator.clipboard.writeText(textarea.value).then(() => {
+          alert('Prompt copiado! Cole no ChatGPT, Gemini ou Grok');
+        }).catch(() => {
+          alert('Não foi possível copiar. Selecione e copie manualmente (Ctrl+C)');
+        });
+      }
+    }
+  </script>
+</body>
+</html>
